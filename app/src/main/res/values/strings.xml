@@ -5,4 +5,6 @@
     <string name="app_edad">Edad</string>
     <string name="app_correo">Correo</string>
     <string name="app_direccion">Direccion</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_mapa">Map</string>
 </resources>
