@@ -139,29 +139,6 @@ public class ActivityFoto extends AppCompatActivity {
     }
 
 
-/*   private void saveFoto(){
-        SQLiteConexion conexion = new SQLiteConexion(this, transaccionesClass.NameDataBase, null, 1);
-        SQLiteDatabase db = conexion.getWritableDatabase();
-
-        imageViewToByte(img);
-
-        Toast.makeText(getApplicationContext(), "IMAGEN GUARDADA: " , Toast.LENGTH_LONG).show();
-
-
-        db.close();
-
-    }
-
-    public static byte[] imageViewToByte(ImageView foto) {
-        Bitmap bitmap = ((BitmapDrawable)foto.getDrawable()).getBitmap();
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-        byte[] byteArray = stream.toByteArray();
-        return byteArray;
-    }*/
-
-
-
 
     private File createImageFile() throws IOException {
         // Create an image file name
