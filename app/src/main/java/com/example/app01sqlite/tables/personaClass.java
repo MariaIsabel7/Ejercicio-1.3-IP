@@ -8,7 +8,11 @@ public class personaClass {
     private String correo;
     private String direccion;
 
+
+
+
     public personaClass() {}
+
 
     public personaClass(Integer id, String nombre, String apellido, Integer edad, String correo, String direccion) {
         this.id = id;
@@ -18,6 +22,7 @@ public class personaClass {
         this.correo = correo;
         this.direccion = direccion;
     }
+
 
     public Integer getId() {
         return id;
@@ -67,4 +72,8 @@ public class personaClass {
         this.direccion = direccion;
     }
 
+
+
 }
+
+

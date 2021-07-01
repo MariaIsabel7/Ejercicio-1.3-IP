@@ -21,6 +21,8 @@ public class transaccionesClass {
     public static final String DropTablePersonas = "DROP TABLE IF EXISTS tbl_personas";
 
 
+
+
     /* Creacion del nombre de la base de datos */
     public static final String NameDataBase = "DBCurso";
 

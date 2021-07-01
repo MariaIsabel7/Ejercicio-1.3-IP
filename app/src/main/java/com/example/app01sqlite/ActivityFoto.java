@@ -7,11 +7,9 @@ import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
 import android.Manifest;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteStatement;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
@@ -22,8 +20,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.example.app01sqlite.transacciones.transaccionClassFoto;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -54,12 +50,6 @@ public class ActivityFoto extends AppCompatActivity {
         btn_foto2 = (Button)findViewById(R.id.btn_foto2);
         btn_save = (Button)findViewById(R.id.btn_save);
 
-        btn_save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                saveFoto();
-            }
-        });
 
         btn_foto2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,8 +131,8 @@ public class ActivityFoto extends AppCompatActivity {
     }
 
 
-    private void saveFoto(){
-        SQLiteConexion conexion = new SQLiteConexion(this, transaccionClassFoto.NameDataBase, null, 1);
+  /*  private void saveFoto(){
+        SQLiteConexion conexion = new SQLiteConexion(this, transaccionesClass.NameDataBase, null, 1);
         SQLiteDatabase db = conexion.getWritableDatabase();
 
         imageViewToByte(img);
@@ -152,15 +142,15 @@ public class ActivityFoto extends AppCompatActivity {
 
         db.close();
 
-    }
+    } */
 
-    public static byte[] imageViewToByte(ImageView foto) {
+   /* public static byte[] imageViewToByte(ImageView foto) {
         Bitmap bitmap = ((BitmapDrawable)foto.getDrawable()).getBitmap();
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
         byte[] byteArray = stream.toByteArray();
         return byteArray;
-    }
+    }*/
 
 
 
