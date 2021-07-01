@@ -26,4 +26,6 @@ public class transaccionesClass {
     /* Creacion del nombre de la base de datos */
     public static final String NameDataBase = "DBCurso";
 
+
+
 }

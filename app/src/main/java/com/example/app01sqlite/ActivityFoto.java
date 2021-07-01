@@ -27,6 +27,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.example.app01sqlite.transacciones.transaccionesClass;
+
 public class ActivityFoto extends AppCompatActivity {
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -50,6 +52,12 @@ public class ActivityFoto extends AppCompatActivity {
         btn_foto2 = (Button)findViewById(R.id.btn_foto2);
         btn_save = (Button)findViewById(R.id.btn_save);
 
+        /*btn_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saveFoto();
+            }
+        });*/
 
         btn_foto2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,7 +139,7 @@ public class ActivityFoto extends AppCompatActivity {
     }
 
 
-  /*  private void saveFoto(){
+/*   private void saveFoto(){
         SQLiteConexion conexion = new SQLiteConexion(this, transaccionesClass.NameDataBase, null, 1);
         SQLiteDatabase db = conexion.getWritableDatabase();
 
@@ -142,9 +150,9 @@ public class ActivityFoto extends AppCompatActivity {
 
         db.close();
 
-    } */
+    }
 
-   /* public static byte[] imageViewToByte(ImageView foto) {
+    public static byte[] imageViewToByte(ImageView foto) {
         Bitmap bitmap = ((BitmapDrawable)foto.getDrawable()).getBitmap();
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
